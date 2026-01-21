@@ -7,6 +7,7 @@ package com.salvador.sanonofre.service;
 import java.net.URI;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import tools.jackson.databind.ObjectMapper;
 import static java.net.http.HttpClient.newHttpClient;
 import static java.net.http.HttpRequest.newBuilder;
@@ -17,6 +18,7 @@ import static java.net.http.HttpResponse.BodyHandlers.ofString;
  * @author Administrador
  */
 @RestController
+@CrossOrigin
 public class BombaSanOnofreServiceController {
 
     private final String BDV_ENDPOINT_URL = "https://www.bancodevenezuela.com/files/tasas/tasas2.json";
